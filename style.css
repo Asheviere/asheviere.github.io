@@ -1,0 +1,62 @@
+body {
+  background: url("stuff/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Curlz MT', 'Comic Sans MS', serif;
+}
+
+.screen {
+  margin: auto;
+  max-width: 900px;
+  background: #b43c96;
+  max-height: 700px;
+  color: rgb(253, 145, 253);
+  text-shadow: 0px 0px 4px black;
+  font-size: 15pt;
+  transform: rotate(0.21deg);
+  box-shadow: 2px 2px 8px black;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  text-align: center;
+}
+
+.title {
+  max-width: 600px;
+}
+
+img {
+  margin: 20px;
+}
+
+button {
+  margin: 20px;
+  background-color: rgb(253, 145, 253);
+  font-size: 16pt;
+  font-family: 'Curlz MT', 'Comic Sans MS', serif;
+}
+
+h3 {
+  margin: 10px;
+}
+
+h5 {
+  font-size: 16pt;
+}
+
+.image {
+  max-width: 500px;
+  max-height: 400px;
+}
+
+.floatingtext {
+  position: absolute;
+  z-index: 1;
+  top: 350px;
+  left: 235px;
+  font-size: 24pt;
+  user-select: none;
+}

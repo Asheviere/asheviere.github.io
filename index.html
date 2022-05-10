@@ -1,0 +1,392 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>WHICH OVERLORD CHARACTER ARE YOU??????</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <link rel="icon" href="stuff/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="screen1" class="screen">
+    <table>
+      <tr>
+        <td colspan="2">
+          <img class="title" src="stuff/title.png">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          In this quiz, you will be answering questions to determine, in a 100% fully legitimate way, which Overlord™ character best suits you!<br/>
+          Unlike other quizzes, this one uses advanced machine learning AI to make sure the answers are always 1000% accurate.<br/><br/>
+          Also, happy birthday!<br/>
+          <button onclick="next()">Start the quiz</button>
+        </td>
+        <td>
+          <img class="image" src="stuff/overlord.jpg">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="screen2" class="screen" hidden="true">
+    <table>
+      <tr>
+        <td colspan="2">
+         <h3>Question 1:</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="image" src="stuff/isekais.png">
+        </td>
+        <td>
+          <h5>What is your favorite isekai?</h5>
+          <form>
+            <input type="radio" id="hp" name="fav_isekai" value="Harry Potter">
+            <label for="hp">Harry Potter</label><br>
+            <input type="radio" id="narnia" name="fav_isekai" value="The Chronicles of Narnia">
+            <label for="narnia">The Chronicles of Narnia</label><br>
+            <input type="radio" id="avatar" name="fav_isekai" value="James Cameron's Avatar">
+            <label for="avatar">James Cameron's Avatar</label><br>
+            <input type="radio" id="sao" name="fav_isekai" value="Sword Art Online">
+            <label for="sao">Sword Art Online</label><br>
+            <input type="radio" id="healer" name="fav_isekai" value="Redo of Healer">
+            <label for="healer">Redo of Healer</label><br>
+          </form>
+
+          <button onclick="next()">Submit your answer</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="screen3" class="screen" hidden="true">
+    <table>
+      <tr>
+        <td colspan="2">
+         <h3>Question 2:</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h5>Assuming you picked the correct option last question, which Hogwarts house will you be placed in?</h5>
+          <form>
+            <input type="radio" id="gryffindor" name="house" value="Gryffindor">
+            <label for="gryffindor">Gryffindor</label><br>
+            <input type="radio" id="slytherin" name="house" value="Slytherin">
+            <label for="slytherin">Slytherin</label><br>
+            <input type="radio" id="ravenclaw" name="house" value="Ravenclaw">
+            <label for="ravenclaw">Ravenclaw</label><br>
+            <input type="radio" id="hufflepuff" name="house" value="Hufflepuff">
+            <label for="hufflepuff">Hufflepuff</label><br>
+          </form>
+
+          <button onclick="next()">Submit your answer</button>
+        </td>
+        <td>
+          <img class="image" src="stuff/sortinghat.jpg">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="screen4" class="screen" hidden="true">
+    <table>
+      <tr>
+        <td colspan="2">
+         <h3>Question 3:</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="image" src="stuff/jkr.jpg">
+        </td>
+        <td>
+          <h5>Speaking of Harry Potter, what do you make of the recent controversies surrounding JK Rowling?</h5>
+          <form>
+            <input type="radio" id="wellok" name="wellok" value="Well ok then...">
+            <label for="wellok">I care very deeply about my own womanhood and could never be friends with, or let alone date, a penised individual. It's good someone is speaking out against this obviously sexually motivated "gender ideology" movement.</label><br>
+          </form>
+
+          <button onclick="next()">Submit your answer</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="screen5" class="screen" hidden="true">
+    <table>
+      <tr>
+        <td colspan="2">
+         <h3>Question 4:</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h5>Well ok, Jesus, that sure was an answer. Uhh, so what is your favorite part about Overlord?</h5>
+          <form>
+            <input type="radio" id="lol1" name="lol1" value="lol1" disabled="true">
+            <label for="lol1" disabled="true">The way Ainz does not have a single clue what he's doing most of the time, while everyone else in the world expects him to be a political genius and expert</label><br>
+            <input type="radio" id="lol2" name="lol2" value="lol2" disabled="true">
+            <label for="lol2" disabled="true">The cool battles and political intrigue between nations. It really feels like there is scale to them and the stakes are high</label><br>
+            <input type="radio" id="lol3" name="lol3" value="lol3" disabled="true">
+            <label for="lol3" disabled="true">The cool character designs and art. Characters like Ainz and Albedo have great designs and ton of cool moments to show that off during the show.</label><br>
+            <input type="radio" id="loli" name="loli" value="Loli">
+            <label for="loli">The vampire lolis</label><br>
+          </form>
+
+          <button onclick="next()">Submit your answer</button>
+        </td>
+        <td>
+          <img class="image" src="stuff/ainz.jpg">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="screen6" class="screen" hidden="true">
+    <table>
+      <tr>
+        <td colspan="2">
+         <h3>Intermission:</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Hey, wanted to pause making fun of you for a minute to just talk about boring stuff instead.</p>
+          <p>I really hope you appreciate this stupid little thing I made. I was torn on what to get you for your birthday, but figured in the end a total shitpost personality quiz would be the most <i>me</i> gift I could give.</p>
+          <p>I love you lots and I hope I could show that this way. It's been incredible to get to know you better the past months, and I hope we can keep that going for many years still. Enjoy the rest of this silly shitpost and hope you have a wonderful birthday! :)</p>
+          <p></p>
+          <p>Oh and I hope you don't take my riffs on your interests too seriously. I think your hobbies are adorable, just felt it needed some edge and shitting on your tastes, else it wouldn't be authentic enough.</p>
+
+          <button onclick="next()">Continue</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="screen7" class="screen" hidden="true">
+    <table>
+      <tr>
+        <td colspan="2">
+         <h3>Question 5:</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="image" src="stuff/goat.jpg">
+        </td>
+        <td>
+          <h5>What's your favorite genre of music?</h5>
+          <form>
+            <input type="radio" id="shoegrind" name="music" value="Post-Shoegrind Revival">
+            <label for="shoegrind">Post-Shoegrind Revival</label><br>
+            <input type="radio" id="voidgaze" name="music" value="Experimental Technical Voidgaze">
+            <label for="voidgaze">Experimental Technical Voidgaze</label><br>
+            <input type="radio" id="cheese" name="music" value="Proto-Classical Baroquefort">
+            <label for="cheese">Proto-Classical Baroquefort</label><br>
+            <input type="radio" id="ironic" name="music" value="Meta-Ironic African Folk Metal">
+            <label for="ironic">Meta-Ironic African Folk Metal</label><br>
+            <input type="radio" id="garbage" name="music" value="Garbage">
+            <label for="ironic">Garbage</label><br>
+          </form>
+
+          <button onclick="next()">Submit your answer</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="screen8" class="screen" hidden="true">
+    <table>
+      <tr>
+        <td colspan="2">
+         <h3>Question 6:</h3>
+        </td>
+      </tr>
+      <tr>
+        <script>
+          let lastOption;
+
+          function addMeme(elem) {
+            if (lastOption) {
+              lastOption.innerHTML = lastOption.oldMessage;
+            }
+            elem.oldMessage = elem.innerHTML;
+            elem.innerHTML = "<span style=\"font-size:12pt;\">Necrophilia, also known as necrophilism, necrolagnia, necrocoitus, necrochlesis, and thanatophilia,<a href=\"https://www.youtube.com/watch?v=r7FR8W41jv8\" target=\"_blank\">[1]</a> is sexual attraction towards or a sexual act involving corpses. It is classified as a paraphilia by the World Health Organization (WHO) in its International Classification of Diseases (ICD) diagnostic manual, as well as by the American Psychiatric Association<a href=\"https://www.youtube.com/watch?v=OGbhJjXl9Rk\" target=\"_blank\">[2]</a> in its Diagnostic and Statistical Manual (DSM).</span>"
+            lastOption = elem;
+          }
+        </script>
+        <td>
+          <h5>Which fictional creature do you find most attractive?</h5>
+          <form>
+            <input onclick="addMeme(this.nextElementSibling)" type="radio" id="skeleton" name="monster" value="Skeleton">
+            <label for="skeleton">Skeleton</label><br>
+            <input onclick="addMeme(this.nextElementSibling)" type="radio" id="vampyre" name="monster" value="Vampyre">
+            <label for="vampyre">Vampyre</label><br>
+            <input onclick="addMeme(this.nextElementSibling)" type="radio" id="werewolf" name="monster" value="Werewolf">
+            <label for="werewolf">Werewolf</label><br>
+            <input onclick="addMeme(this.nextElementSibling)" type="radio" id="demon" name="monster" value="Hufflepuff">
+            <label for="demon">Demon</label><br>
+          </form>
+
+          <button onclick="next()">Submit your answer</button>
+        </td>
+        <td>
+          <img class="image" src="stuff/skeleton.jpg">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="screen9" class="screen" hidden="true">
+    <table>
+      <tr>
+        <td colspan="2">
+         <h3>Question 7:</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="image" src="stuff/food.jpg">
+        </td>
+        <td>
+          <h5>What should I make for dinner tonight? This isn't really related to the quiz, I'm just completely out of ideas and suck at making these decisions...</h5>
+          <form>
+            <input type="radio" id="pasta" name="food" value="Pasta">
+            <label for="pasta">Pasta</label><br>
+            <input type="radio" id="borgir" name="food" value="Borgir">
+            <label for="borgir">Borgir</label><br>
+            <input type="radio" id="tacos" name="food" value="Tacos">
+            <label for="tacos">Tacos</label><br>
+            <input type="radio" id="whatever" name="food" value="Whatever">
+            <label for="whatever">Whatever, probably something insanely spicy</label><br>
+          </form>
+
+          <button onclick="next()">Submit your answer</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="screen10" class="screen" hidden="true">
+    <table style="overflow-y:auto;">
+      <tr>
+        <td colspan="2">
+         <h3>Question 8:</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size:11pt;">You can't quite shake how hot under the collar being this close to Vaush makes you. His muscles flex and bulge with every slight movement, and he has an unmistakably masculine musk that gives him a supremely sexual aura, not even mention the blatant bulge in his robe.</p>
+          <p style="font-size:11pt;">You plant your hand on his thigh and move up closer. "Wanna fuck?" You ask, huskily.</p>
+          <p style="font-size:11pt;">Instead of answering with words, he stands up and sheds his robe expertly, letting it fall to the ground as he stands before you in nothing but a small undercloth, barely holding in his mighty manhood. With a single pull, even that falls to the ground, revealing his rapidly-hardening member.</p>
+          <p style="font-size:11pt;">It climbs higher and higher, growing longer and plumper with each passing second. It stops, but not before reaching a near-monstrous length and mouth-watering thickness.</p>
+          <p style="font-size:11pt;">What do you want to do?</p>
+
+          <button onclick="next()">Catch</button>
+          <button onclick="next()" disabled="true">Pitch Anal</button>
+          <button onclick="next()" disabled="true">Blow him</button>
+        </td>
+        <td>
+          <img class="image" src="stuff/vaush.png">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="screen11" class="screen" hidden="true">
+    <table>
+      <tr>
+        <td>
+          <div style="overflow-y:auto;height:600px;">
+            <p style="font-size:11pt;">You feel your ruined pussy juice itself up as you watch his shaft throb in the open air. The thought of fitting all of it inside of you has your mind and body racing in excitement, and you couldn't stop yourself from jumping him even if you wanted to! You turn around and press your bottom into his crotch, letting his huge fuckrod rest in the crack of your ass</p>
+            <p style="font-size:11pt;">"Let's go for a ride, big boy!"</p>
+            <p style="font-size:11pt;">By your command, Vaush grabs you by the flared hips and starts to strip you down. He squeezes your colossal assflesh as he gets your plain underwear off, slowly working his way down to your pussy. You feel a fat finger work its way into your pussy, digging in to test the waters on your flexibility. He seems surprised when his finger manages to sink all the way in with little resistance, owing to your well-experienced entrance. Looks like he won't need lube after all.</p>
+            <p style="font-size:11pt;">With that dealt with, he moves up to your top, carefully removing your comfortable clothes, revealing your bare nice tits. His huge mitts mostly engulf your titties, gently groping and tugging at your tender tits in order to rile you up before he sticks it in.</p>
+            <p style="font-size:11pt;">Finally Vaush finishes up with the foreplay and lines up his impressive prick with your pussy. Without another word he pushes in, getting his fat head inside you, letting you get used to his girth. And what a girth! It feels like a man's fist stuck inside you rather than a typical cock. He gives you time but not nearly enough to get you really ready for over a foot more of similar, if not fatter girth. It slowly works its way through your insides like a huge, lumbering beast.</p>
+            <p style="font-size:11pt;">Vaush is surprisingly gentle through the whole thing. Yet just the act of feeding his obscenely thick member into your exotic slit is enough to drive you up the wall! It's so bad that you find yourself cumming around his cock by the time he's even bottomed out. Your pussy clenches and juices around him, your breeding instincts giving you visions of a belly stuffed full of orc babies, which certainly won't be a reality until your current pregnancy comes to term </p>
+            <p style="font-size:11pt;">Once Vaush does bottom out he gives you a minute to just adjust and get your senses back. "Doing alright down there?"</p>
+            <p style="font-size:11pt;">You give a meek thumbs-up. "D-doing good, keep it up!"</p>
+            <p style="font-size:11pt;">He just shrugs before getting back to fucking.</p>
+            <p style="font-size:11pt;">Without warning he yanks out to the tip and hammers it back in. You yell out in lust-filled shock, struggling to keep your legs straight. He's not even going that fast but just the sheer size makes the experience far more intense than his otherwise leisurely pace would impart. Despite your best efforts, you still find yourself struggling to stay up, forcing Vaush to grab you around the waist and hoist you into his man-bosom.</p>
+            <p style="font-size:11pt;">Vaush keeps going, and slowly but surely you manage to adjust to his girth. It helps that you have a grace period here where you don't have to use your legs! Eventually you regain your strength and wiggle out of his arms.</p>
+            <p style="font-size:11pt;">He stops to let you reposition. "Got your second wind, huh?"</p>
+            <p style="font-size:11pt;">You nod and thrust back into him, taking his full cock in stride.</p>
+            <p style="font-size:11pt;">"Guess so!"</p>
+            <p style="font-size:11pt;">The hung hunter starts thrusting again, this time being met by your own, matching thrusts as you finally become an active participant in the coitus. He seems a lot more into it now, knowing that you're more than just a limp cocksleeve. Crotches mash and bash together as the two of you accelerate into a full-on rut, and in the back of your mind you congratulate yourself for taming such a large beast.</p>
+            <p style="font-size:11pt;">The feeling of your voluminous slit so thoroughly stretched is exquisite; even better now that you're actually stable-minded enough to fully register it. Vaush seems to be enjoying the feeling just as much as you, if the way he grunts and moans in pleasure is any indication. It's also plainly obvious from the way his cock throbs so powerfully inside of you, discharging huge gouts of pre-cum inside of you. It's so thick that you actually start to wonder if you could get pregnant off of just that...</p>
+            <p style="font-size:11pt;">You feel yourself starting to close in on a second orgasm; but before you can get too comfortable Vaush suddenly pulls back, sending the both of you flying back. You land on Vaush, taking his entire ogre cock in one quick movement, sending a shock up your spine.</p>
+            <p style="font-size:11pt;">"Ready to really take charge?" He says in a chiding tone.</p>
+            <p style="font-size:11pt;">You respond by starting to bounce on his cock, making sure to give your plush, ginormous butt some good shaking as you do. The momentum you built up before is all but gone, leaving you to start all over. Luckily the sudden shock also staved off your orgasm, so you have the stamina to actually do so.</p>
+            <p style="font-size:11pt;">The next few minutes are spent with your two sweaty bodies mashing together. Vaush even starts to thrust back up into you after a point, screwing up your momentum for a bit, but speeding up the pace dramatically. You find yourself once again hurtling toward orgasm, and you can see and feel that Vaush is on the same path; His breath is ragged and constantly interrupted by exclamations of lust, his cock is so swollen inside of you that you swear it's gained at least an inch in thickness, and his balls are throbbing and pulling taut.</p>
+            <p style="font-size:11pt;">You cum first, your pussy clenching around his rod yet again. Vaush follows soon after, his orgasm charging up his shaft like a raging bull. His thick, virile cum rushes toward your womb, only to find the gates closed in order to safeguard your future offspring. With nowhere else to go, it rushes right back out, flooding over both of your crotches with wild abandon.</p>
+            <p style="font-size:11pt;">You sit there, on top of Vaush, just basking in the afterglow with him for a few minutes. Eventually he nudges you to get off, seemingly in at least a bit of a hurry.</p>
+            <p style="font-size:11pt;">"I'd love to just sit here and fuck all day, but the others are going to bust my balls if they think I fell down drunk again." He rises and lazily redresses as you hop off. You do the same, and set back out on your quest.</p>
+            <button onclick="next()">Next</button>
+          </div>
+        </td>
+        <td>
+          <img class="image" src="stuff/vaush.png">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="screen12" class="screen" hidden="true">
+    <table>
+      <tr>
+        <td colspan="2">
+         <h3>Bunny Clicker!</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="bunny">
+            <img class="image" src="stuff/bunny.jpg">
+          </div>
+        </td>
+        <td>
+          <h5>Current love: <span id="love">0</span></h5>
+          <h6>(<span id="lps">0</span> per second)</h6>
+
+          <button id="carrots" style="font-size:13pt;display:flex;align-items:center;"><img src="stuff/carrot.jpg" width="69px"><span>Buy a carrot (<span id="carrots-cost">0</span> love): <span id="carrots-benefit">0</span> love per second. Every 10 carrots give +1 carrot per click<br/>Currently owned: <span id="carrots-amount">0</span></span></button>
+          <button id="bunnies" style="font-size:13pt;display:flex;align-items:center;"><img src="stuff/bunnybutton.png" width="69px"><span>Buy a bunny (<span id="bunnies-cost">0</span> love): <span id="bunnies-benefit">0</span> love per second<br/>Currently owned: <span id="bunnies-amount">0</span></span></button>
+          <button id="hellbunny" style="font-size:13pt;display:flex;align-items:center;"><img src="stuff/hellbunny.jpg" width="69px"><span>Buy a hellbunny (<span id="hellbunny-cost">0</span> love): <span id="hellbunny-benefit">0</span> love per second<br/>Currently owned: <span id="hellbunny-amount">0</span></span></button>
+          <button id="next" onclick="game.nextQuestion()">Go to the next question! (<span id="next-cost">0</span> love)</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="screen13" class="screen" hidden="true">
+    <table>
+      <tr>
+        <td colspan="2">
+         <h3>Results</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="image" src="stuff/hug.png">
+        </td>
+        <td>
+          <h5>You are... The cutest girl in the world!</h5>
+          <p>I don't make the rules, this is what the AI decided! We ran the algorithm, and it says you're the cutest! Unless this isn't Lisa taking this quiz in which case piss off fuck you.</p>
+          <p>I once again really hope you enjoyed this shitpost of a birthday gift, I spent more time than I'm willing to admit on the stupid bunny clicker... Hope you have a lovely rest of your day~ - Your gay catgirl gf</p>
+          <p style="font-style:italic;">Also I have no clue what anime this picture is from I don't watch this shit if it's deeply problematic I'm so sorry</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="bunny-clicker.js"></script>
+  <script src="main-script.js"></script>
+</body>
+</html>
